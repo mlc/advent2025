@@ -18,7 +18,7 @@ const now = ZonedDateTime.now(ZoneId.of('America/New_York'));
 const day = Deno.args.length === 1 ? parseInt(Deno.args[0]) : now.dayOfMonth();
 const year = now.year();
 
-if (now.month() !== Month.DECEMBER || day >= 26) {
+if (now.month() !== Month.DECEMBER || day >= 13) {
   throw new Error("it's not the right season");
 }
 
@@ -36,7 +36,7 @@ const cookie = await Deno.readTextFile(
 const resp = await fetch(`https://adventofcode.com/${year}/day/${day}/input`, {
   headers: {
     Cookie: cookie,
-    'User-Agent': 'mlc-advent/0.1 github.com/mlc/advent2024',
+    'User-Agent': 'mlc-advent/0.1 github.com/mlc/advent2025',
   },
 });
 
