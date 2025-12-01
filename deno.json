@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "start": "deno run -A start.ts",
+    "fetch": "deno run -A fetch-input.ts",
+    "hook": "deno run --allow-read --allow-run --allow-write https://deno.land/x/deno_hooks@0.1.2/mod.ts"
+  },
+  "imports": {
+    "@js-joda/core": "npm:@js-joda/core@5.6.5",
+    "@js-joda/timezone": "npm:@js-joda/timezone@2.22.0",
+    "@std/collections": "jsr:@std/collections@1.0.9",
+    "@std/streams": "jsr:@std/streams@1.0.8",
+    "mnemonist": "npm:mnemonist@0.40.3",
+    "imagescript": "npm:imagescript@1.3.0",
+    "dejs": "https://deno.land/x/dejs@0.10.3/mod.ts"
+  }
+}

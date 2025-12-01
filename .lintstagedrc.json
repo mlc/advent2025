@@ -1,0 +1,3 @@
+{
+  "*.{ts,json,js}": "deno fmt --single-quote=true"
+}
