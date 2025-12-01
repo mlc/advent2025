@@ -234,3 +234,5 @@ export const lcm = (...ns: readonly number[]) =>
 
 export const lcmBig = (...ns: readonly bigint[]) =>
   ns.reduce((a, b) => (a / gcdBig(a, b)) * b, 1n);
+
+export const mod = (n: number, d: number): number => ((n % d) + d) % d;
