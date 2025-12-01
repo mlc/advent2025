@@ -7,10 +7,16 @@
   "imports": {
     "@js-joda/core": "npm:@js-joda/core@5.6.5",
     "@js-joda/timezone": "npm:@js-joda/timezone@2.22.0",
+    "@js-joda/locale_en": "npm:@js-joda/locale_en@4.15.1",
     "@std/collections": "jsr:@std/collections@1.0.9",
     "@std/streams": "jsr:@std/streams@1.0.8",
+    "bcrypt": "https://unpkg.com/bcryptjs@3.0.3/index.js",
+    "crypto": "node:crypto",
     "mnemonist": "npm:mnemonist@0.40.3",
     "imagescript": "npm:imagescript@1.3.0",
     "dejs": "https://deno.land/x/dejs@0.10.3/mod.ts"
+  },
+  "fmt": {
+    "singleQuote": true
   }
 }
