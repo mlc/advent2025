@@ -53,14 +53,13 @@ export const readSplit = (
   );
 
 export const setIntersect = <T>(
-  set: Set<T> = new Set(),
   ...sets: Set<T>[]
 ): Set<T> => {
-  if (!sets || sets.length === 0) {
-    return set;
+  if (sets.length === 0) {
+    return new Set<T>();
+  } else {
+    return sets.reduce((accum, a) => accum.intersection(a));
   }
-
-  return new Set([...set].filter((it) => sets.every((s) => s.has(it))));
 };
 
 export const mapChars = (
