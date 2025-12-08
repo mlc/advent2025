@@ -12,6 +12,8 @@
     "@std/streams": "jsr:@std/streams@1.0.8",
     "bcrypt": "https://unpkg.com/bcryptjs@3.0.3/index.js",
     "crypto": "node:crypto",
+    "graphology": "npm:graphology@0.26.0",
+    "graphology-components": "npm:graphology-components@1.5.4",
     "mnemonist": "npm:mnemonist@0.40.3",
     "imagescript": "npm:imagescript@1.3.0",
     "dejs": "https://deno.land/x/dejs@0.10.3/mod.ts"
